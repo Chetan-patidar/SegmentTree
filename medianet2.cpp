@@ -53,7 +53,7 @@ class SGT{
         if(lazy[index]!=0){
           if(lazy[index]%2==1){
             int count = high-low+1;
-            seg[index] = count - seg[index];
+            seg[index].setbit = count - seg[index].setbit;
             //propagate
             if(low!=high){
                 lazy[2*index+1]++;
